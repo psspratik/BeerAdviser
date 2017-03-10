@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_beer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hdaf.beeradviser.FindBeerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brands"
+        android:id="@+id/brands"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/find_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginTop="54dp"
+        android:onClick="onClickFindBeer"
+        android:layout_below="@+id/color"
+        android:layout_toRightOf="@+id/brands"
+        android:layout_toEndOf="@+id/brands" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/color"
+        android:spinnerMode="dropdown"
+        android:entries="@array/beer_colors"
+        android:layout_below="@+id/brands"
+        android:layout_toRightOf="@+id/brands"
+        android:layout_toEndOf="@+id/brands"
+        android:layout_marginTop="29dp" />
+</RelativeLayout>
+
+
